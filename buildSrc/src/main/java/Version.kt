@@ -7,4 +7,8 @@ object Version {
     const val junit = "4.13.2"
     const val extJunit = "1.1.5"
     const val espressoCore = "3.5.1"
+    const val koin = "3.3.2"
+    const val coroutines = "1.6.4"
+    const val lifecycle = "2.5.1"
+    const val room = "2.2.3"
 }

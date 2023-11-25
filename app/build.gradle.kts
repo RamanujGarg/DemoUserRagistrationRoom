@@ -1,6 +1,7 @@
 plugins {
     id ("com.android.application")
     kotlin ("android")
+    kotlin("kapt")
 }
 
 android {
@@ -39,4 +40,13 @@ dependencies {
     testImplementation (Dependency.junit)
     androidTestImplementation (Dependency.extJunit)
     androidTestImplementation (Dependency.espressoCore)
+    implementation(Dependency.koin)
+    implementation(Dependency.coroutinesCore)
+    implementation(Dependency.coroutinesAndroid)
+    implementation(Dependency.viewModel)
+    implementation(Dependency.livedata)
+    kapt(Dependency.lifeCycleCompiler)
+    implementation(Dependency.roomKtx)
+    implementation(Dependency.roomRunTime)
+    kapt(Dependency.roomCompiler)
 }
